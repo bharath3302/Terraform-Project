@@ -1,5 +1,5 @@
 # Creating Public Subnet 
- 
+
 resource "aws_subnet" "Public_demosubnet-1" {
   vpc_id                  = aws_vpc.terraform-vpc.id
   cidr_block              = var.subnet1_cidr
@@ -24,7 +24,7 @@ resource "aws_internet_gateway" "demogateway" {
   vpc_id = aws_vpc.terraform-vpc.id
   tags = {
     Name = "demo-gateway"
-	}
+  }
 }
 # Creating Route Table for Public Subnet
 resource "aws_route_table" "rt" {
