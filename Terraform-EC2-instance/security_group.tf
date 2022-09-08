@@ -9,6 +9,7 @@ resource "aws_security_group" "demosg" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+  
   # Outbound Rules
   # Internet access to anywhere
   egress {

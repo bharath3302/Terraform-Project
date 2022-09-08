@@ -26,6 +26,7 @@ resource "aws_internet_gateway" "demogateway" {
     Name = "demo-gateway"
   }
 }
+
 # Creating Route Table for Public Subnet
 resource "aws_route_table" "rt" {
   vpc_id = aws_vpc.terraform-vpc.id
